@@ -4,6 +4,12 @@ install:
 	#Move the launcher script
 	mkdir -p /app/bin/
 	install xonotic.sh /app/bin/xonotic
+	#Remove windows/Mac binaries and other crap
+	find . -name '*.exe' -delete
+	find . -name '*.dll' -delete
+	rm -rf bin32
+	rm -rf bin64
+	rm -rf Xonotic.app
 	#Install xonotic
 	mkdir -p /app/share/xonotic
 	mv * /app/share/xonotic
