@@ -19,4 +19,4 @@ I might put installation, cleanup etc. into the Makefile in the future.
 * Set up a proper flatpak repo
 * Build xonotic from source. This is difficult due to xonotic's esoteric build process.
 * Make a nightly version built from the xonotic git repo available
-* Add a .desktop file
+* ~~Add a .desktop file~~ DONE
