@@ -1,8 +1,8 @@
 {
   "app-id": "org.xonotic.xonotic",
-  "runtime": "org.gnome.Platform",
-  "runtime-version": "3.22",
-  "sdk": "org.gnome.Sdk",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "1.4",
+  "sdk": "org.freedesktop.Sdk",
   "command": "xonotic",
   "finish-args": [
       /* X11 access */
