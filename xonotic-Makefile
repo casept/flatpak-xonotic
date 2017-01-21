@@ -13,5 +13,27 @@ install:
 	#Install xonotic
 	mkdir -p /app/share/xonotic
 	cp -r * /app/share/xonotic
+	#Install the .desktop and other files
+	mkdir -p /app/share/applications/
+	install org.xonotic.xonotic.desktop /app/share/applications/org.xonotic.xonotic.desktop
+	mkdir -p /app/share/appdata/
+	install org.xonotic.xonotic.appdata.xml /app/share/appdata/org.xonotic.xonotic.appdata.xml
+	#Install icons
+	#TODO: Clean this up (AKA use a loop)
+	mkdir -p /app/share/icons/hicolor/128x128/apps/
+	install misc/logos/icons_png/xonotic_128.png /app/share/icons/hicolor/128x128/apps/org.xonotic.xonotic.png
+	mkdir -p /app/share/icons/hicolor/256x256/apps/
+	install misc/logos/icons_png/xonotic_256.png /app/share/icons/hicolor/256x256/apps/org.xonotic.xonotic.png
+	mkdir -p /app/share/icons/hicolor/512x512/apps/
+	install misc/logos/icons_png/xonotic_512.png /app/share/icons/hicolor/512x512/apps/org.xonotic.xonotic.png
+	mkdir -p /app/share/icons/hicolor/64x64/apps/
+	install misc/logos/icons_png/xonotic_64.png /app/share/icons/hicolor/64x64/apps/org.xonotic.xonotic.png
+	mkdir -p /app/share/icons/hicolor/48x48/apps/
+	install misc/logos/icons_png/xonotic_48.png /app/share/icons/hicolor/48x48/apps/org.xonotic.xonotic.png
+	mkdir -p /app/share/icons/hicolor/32x32/apps/
+	install misc/logos/icons_png/xonotic_32.png /app/share/icons/hicolor/32x32/apps/org.xonotic.xonotic.png
+	mkdir -p /app/share/icons/hicolor/16x16/apps/
+	install misc/logos/icons_png/xonotic_16.png /app/share/icons/hicolor/16x16/apps/org.xonotic.xonotic.png
+
 make:
 	true

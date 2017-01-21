@@ -1,9 +1,9 @@
 [Desktop Entry]
+Type=Application
 Encoding=UTF-8
 Version=0.8.1
 Name=Xonotic
-Exec=/app/bin/xonotic
-Icon=/app/factorio/data/core/graphics/factorio.png
-Type=Application
+Exec=xonotic
+Icon=org.xonotic.xonotic.png
+Terminal=false
 Categories=Game;
-
