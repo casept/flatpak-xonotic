@@ -12,6 +12,6 @@ install:
 	rm -rf Xonotic.app
 	#Install xonotic
 	mkdir -p /app/share/xonotic
-	mv * /app/share/xonotic
+	cp -r * /app/share/xonotic
 make:
 	true
