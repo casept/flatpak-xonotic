@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+<id>org.xonotic.xonotic.desktop</id>
+  <name>Xonotic</name>
+  <metadata_license>CC0-1.0</metadata_license>
+  <summary>The Free and Fast Arena Shooter</summary>
+  <description>
+    <p>
+      A computer game, I should probably borrow some description from
+      wikipedia.
+    </p>
+  </description>
+  <url type="homepage">http://xonotic.org</url>
+  <screenshots>
+    <screenshot type="default">
+	    <image>http://xonotic.org/static/img/screenshot1.jpg</image>
+    </screenshot>
+  </screenshots>
+  <project_license>GPLv2</project_license>
+  <developer_name>Team Xonotic</developer_name>
+</component>

@@ -1,0 +1,11 @@
+all:
+	true
+install:
+	#Move the launcher script
+	mkdir -p /app/bin/
+	install xonotic.sh /app/bin/xonotic
+	#Install xonotic
+	mkdir -p /app/share/xonotic
+	mv * /app/share/xonotic
+make:
+	true

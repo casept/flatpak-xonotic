@@ -1,0 +1,57 @@
+{
+  "app-id": "org.xonotic.xonotic",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "3.22",
+  "sdk": "org.gnome.Sdk",
+  "command": "xonotic",
+  "finish-args": [
+      /* X11 access */
+      "--socket=x11", "--share=ipc",
+      /* OpenGL access */
+      "--device=dri",
+      /* PulseAudio access */
+      "--socket=pulseaudio",
+      /* Network access */
+      "--share=network",
+      /* Wayland access */
+      "--socket=wayland",
+      /* Persist saves and config files */
+      "--filesystem=~/.xonotic"
+
+
+  ],
+  "modules": [
+
+	  {
+          "name": "xonotic",
+          "no-autogen": true,
+          "sources" : [
+              {
+                  "type": "archive",
+                  "url": "http://dl.xonotic.org/xonotic-0.8.1.zip",
+                  "sha256": "be8bcc41e2993a2f26d4d04c65a7eab810443bd98b11b45e482ffdbbf284c46f",
+		  "dest-filename": "xonotic.zip"
+              },
+              {
+                  "type": "file",
+                  "path": "org.xonotic.xonotic.desktop",
+                  "dest-filename": "org.xonotic.xonotic.desktop"
+              },
+              {
+                  "type": "file",
+                  "path": "xonotic-Makefile",
+                  "dest-filename": "Makefile"
+              },
+              {
+                  "type": "file",
+                  "path": "xonotic.sh",
+                  "dest-filename": "xonotic.sh"
+              },
+              {
+                  "type": "file",
+                  "path": "org.xonotic.xonotic.appdata.xml"
+              }
+          ]
+      }
+  ]
+}
