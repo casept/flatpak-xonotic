@@ -5,6 +5,11 @@ No downloads of prebuilt packages are currently available, I might set up CI to 
 ##Building and installing
 Clone the project, then run
 ```
+wget https://sdk.gnome.org/keys/gnome-sdk.gpg
+flatpak remote-add --user --if-not-exists --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+flatpak --user install gnome org.freedesktop.Platform 1.4
+flatpak --user install gnome org.freedesktop.Sdk 1.4
+
 make
 flatpak build-bundle --verbose --ostree-verbose repo Xonotic-0.8.1.flatpak org.xonotic.xonotic
 flatpak install --user Xonotic-0.8.1.flatpak
