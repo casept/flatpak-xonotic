@@ -1,0 +1,12 @@
+before_install:
+  - sudo add-apt-repository ppa:alexlarsson/flatpak -y
+  - sudo apt-get update -q
+  - sudo apt-get install flatpak -y
+  - wget https://sdk.gnome.org/keys/gnome-sdk.gpg
+  - flatpak remote-add --user --if-not-exists --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+  - flatpak --user install gnome org.freedesktop.Platform 1.4
+  - flatpak --user install gnome org.freedesktop.Sdk 1.4
+
+script:
+  - make
+  - flatpak build-bundle --verbose --ostree-verbose repo Xonotic-0.8.1.flatpak org.xonotic.xonotic
