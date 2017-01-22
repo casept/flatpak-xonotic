@@ -1,0 +1,13 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    #We need to use debian sid because stable doesn't have the flatpak package
+    - sudo docker pull casept/debian-amd64:sid
+
+#TODO: Add some actual tests here          
+test:
+  override:
+    - /bin/true
