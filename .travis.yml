@@ -1,3 +1,7 @@
+dist: trusty
+sudo: required
+
+
 before_install:
   - sudo add-apt-repository ppa:alexlarsson/flatpak -y
   - sudo apt-get update -q
