@@ -11,8 +11,8 @@ flatpak --user install gnome org.freedesktop.Platform 1.4
 flatpak --user install gnome org.freedesktop.Sdk 1.4
 
 make
-flatpak build-bundle --verbose --ostree-verbose repo Xonotic-0.8.1.flatpak org.xonotic.xonotic
-flatpak install --user Xonotic-0.8.1.flatpak
+flatpak build-bundle --verbose --ostree-verbose repo Xonotic-0.8.2.flatpak org.xonotic.xonotic
+flatpak install --user Xonotic-0.8.2.flatpak
 ```
 I might put installation, cleanup etc. into the Makefile in the future.
 
