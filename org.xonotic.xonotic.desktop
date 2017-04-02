@@ -1,7 +1,6 @@
 [Desktop Entry]
 Type=Application
-Encoding=UTF-8
-Version=0.8.1
+Version=1.0
 Name=Xonotic
 Exec=xonotic
 Icon=org.xonotic.xonotic.png
