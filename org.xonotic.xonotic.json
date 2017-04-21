@@ -18,7 +18,7 @@
       /* Wayland access */
       "--socket=wayland",
       /* Persist saves and config files */
-      "--persist=~/.xonotic"
+      "--persist=.xonotic"
 
 
   ],
