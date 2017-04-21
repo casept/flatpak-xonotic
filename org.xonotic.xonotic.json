@@ -4,6 +4,8 @@
   "runtime-version": "1.4",
   "sdk": "org.freedesktop.Sdk",
   "command": "xonotic",
+  "rename-icon": "xonotic",
+  "rename-desktop-file": "xonotic.desktop",
   "finish-args": [
       /* X11 access */
       "--socket=x11", "--share=ipc",
@@ -34,8 +36,7 @@
               },
               {
                   "type": "file",
-                  "path": "org.xonotic.xonotic.desktop",
-                  "dest-filename": "org.xonotic.xonotic.desktop"
+                  "path": "xonotic.desktop"
               },
               {
                   "type": "file",

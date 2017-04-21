@@ -3,6 +3,6 @@ Type=Application
 Version=1.0
 Name=Xonotic
 Exec=xonotic
-Icon=org.xonotic.xonotic.png
+Icon=xonotic.png
 Terminal=false
 Categories=Game;
